@@ -1,10 +1,9 @@
-﻿using System.Collections.Generic;
-using System;
-namespace Week8;
+﻿namespace Week8;
 
-public class ResourceManager<T> where T : Resource
+public class ResourceManager<T> where T : Resourse
 {
     private readonly List<T> _resources = new();
+
     public void Add(T resource)
     {
         _resources.Add(resource);

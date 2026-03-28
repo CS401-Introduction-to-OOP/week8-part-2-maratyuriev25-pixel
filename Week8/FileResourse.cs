@@ -3,22 +3,23 @@ namespace Week8;
 
 public class FileResourse : Resourse, IDisposable
 {
-    public FileResourse(string name) : base(name)
+    public FileResourse(string name, bool isOpen) : base(name, isOpen)
     {
     }
 
-    public override void Open() 
-    { 
-        throw new NotImplementedException();
+    public override void Open()
+    {
+        Console.WriteLine("File opened");
     }
 
     public override void Close()
     {
-        throw new NotImplementedException();
+        Console.WriteLine("File closed");
     }
 
-    public void Dispose() 
+    public void Dispose()
     {
         Close();
         throw new NotImplementedException();
     }
+}

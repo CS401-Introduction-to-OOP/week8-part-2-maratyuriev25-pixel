@@ -6,14 +6,14 @@ public abstract class Resourse
 	string Name { get; set; }
 	bool IsOpen { get; set; }
 
-	protected Resourse(string name)
+	protected Resourse(string name, bool isOpen)
 	{
 		Name = name;
-		IsOpen = false;
+		IsOpen = isOpen;
     }
 
-    abstract void Open();
+    public abstract void Open();
 	
-    abstract void Close();
+     public abstract void Close();
 
 }
