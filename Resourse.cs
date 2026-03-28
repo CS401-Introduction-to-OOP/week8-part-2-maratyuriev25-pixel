@@ -13,6 +13,7 @@ public abstract class Resourse
     }
 
     abstract void Open();
+	
     abstract void Close();
 
 }

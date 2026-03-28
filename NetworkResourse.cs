@@ -6,17 +6,17 @@ public class NetworkResource : Resource, IDisposable
     public NetworkResource(string name) : base(name)
     {
     }
-    public override void Open()
-    {
-        throw new NotImplementedException("File, opened");
+    public override void Open() 
+    { 
+        Console.Writeline("File opened");
     }
     public override void Close()
     {
-        throw new NotImplementedException("File closed");
+        Console.Writeline("File closed");
     }
     public void Dispose()
     {
         Close();
-        throw new NotImplementedException("File closed");
+        Console.Writeline("File closed");
     }
 }
