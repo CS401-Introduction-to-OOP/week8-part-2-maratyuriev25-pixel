@@ -1,4 +1,4 @@
-﻿using System;
+﻿namespace Week8;
 
 public class BoxingTester
 {
@@ -9,8 +9,8 @@ public class BoxingTester
 
         int c = (int)b;
 
-        Console.WriteLine(c);
-        Console.WriteLine(b);
-        Console.WriteLine(a);
+        Console.WriteLine(c); // here we have a boxed value of a, and we unbox it back to an int so it will be 10
+        Console.WriteLine(b); // here we have a boxed value of a, so it will be 10
+        Console.WriteLine(a); // here we have the original value of a, so it will be 10
     }
 }
