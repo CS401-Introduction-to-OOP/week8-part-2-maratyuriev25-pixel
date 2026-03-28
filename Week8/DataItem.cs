@@ -1,15 +1,10 @@
 ﻿using System;
+namespace Week8;
 
 public class DataItem
 {
-	string Id { get; set; }
-	byte[] Payload { get; set; }
-
-	public DataItem(string id, byte[] payload)
-	{
-		Id = id;
-		Payload = payload;
-    }
+	public string Id { get; set; }
+	public byte[] Payload { get; set; }
 
 	public int GetSize()
 	{
