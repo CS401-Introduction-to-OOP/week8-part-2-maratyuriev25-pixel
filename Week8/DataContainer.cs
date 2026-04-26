@@ -1,5 +1,6 @@
 ﻿namespace Week8;
-using System.Collection.Generic;
+using System.Collections.Generic;
+
 
 public class DataContainer<T> where T : DataItem
 {
